@@ -5,6 +5,10 @@ ver = "1"
 player = game.Players.LocalPlayer
 isPremium = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZyxnHub/xzyn/main/mod.lua"))()
 
+if not isPremium[game.Players.LocalPlayer.UserId] then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/laderite/zenx/main/Key.lua'))()
+end
+
 local loader = loadstring(game:HttpGet('https://raw.githubusercontent.com/ZyxnHub/xzyn/main/loader.lua'))()
 game.CoreGui.ChildAdded:Connect(function(v)
     if v.Name == "loader" then
