@@ -1,4 +1,4 @@
-local url = "https://raw.githubusercontent.com/xzynhub/zenx/main/scripts"
+local url = "https://raw.githubusercontent.com/xzynhub/zenx/main/main"
 
 local games = {
     [5023820864] = "Trade Tower";
